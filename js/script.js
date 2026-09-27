@@ -141,3 +141,116 @@ resetbtn.addEventListener('click', () => {
 
 
 
+
+
+let nubmer = ["apple", "orange", "mango"]
+
+nubmer.forEach((p) => {
+    console.log(p);
+
+})
+
+
+
+function add() {
+    let a = 51
+    return a + 1
+
+}
+// console.log(add());
+
+
+
+let ss = [100, 10, 5, 20, 30, 40]
+
+
+ss.map((s) => {
+    if (s >= 45) {
+        return s + 5
+    }
+
+
+    console.log(s);
+})
+
+
+// console.log(ss);
+
+
+// let on = document.getElementById("on")
+// let body = document.getElementById("body")
+
+
+// on.addEventListener("click", () => {
+//     if (on.innerHTML === "on") {
+//         body.style.background = "red"
+//         on.innerHTML = "off"
+//     }
+//     else{
+//         body.style.background = "white"
+//         on.innerHTML = "on"
+//     }
+
+// })
+
+
+// let on = document.getElementById("on")
+// let body = document.getElementById("body")
+
+// on.addEventListener("click", () => {
+//     if (on.innerHTML == "on") {
+//         body.style.background = "red"
+//         on.innerHTML = "off"
+//     } else {
+//         body.style.background = "white" // অথবা আপনার আগের কালার
+//         on.innerHTML = "on"
+//     }
+// })
+
+
+
+
+// let switchBtn = document.getElementById("switch")
+
+// switchBtn.addEventListener("click", () => {
+//     switchBtn.classList.toggle("active")
+// })
+
+
+// let sw = document.getElementById("sw")
+
+// let bt = sw.querySelector(".bt")
+
+// sw.addEventListener("click", () => {
+
+//     sw.classList.toggle(body.style.background = "red")
+//     sw.classList.toggle(body.style.background = "green")
+//     bt.classList.toggle("left-[2px]")
+//     bt.classList.toggle("left-[50px]")
+
+// })
+
+
+
+let switchs = document.getElementById("switchs")
+let circle = document.getElementById("circle")
+// let body = document.getElementById("body")
+
+switchs.addEventListener("click", () => {
+    circle.classList.toggle('translate-x-6')
+
+
+    if (circle.classList.contains("translate-x-6")) {
+        body.style.background = "red"
+        circle.classList.remove("bg-red-500")
+        circle.classList.add("bg-green-500")
+
+    }
+    else {
+        body.style.background = "green"
+        circle.classList.remove("bg-green-500")
+        circle.classList.add("bg-red-500")
+    }
+
+
+})
