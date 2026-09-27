@@ -174,7 +174,7 @@ ss.map((s) => {
 })
 
 
-// console.log(ss);
+console.log(ss);
 
 
 // let on = document.getElementById("on")
@@ -232,25 +232,97 @@ ss.map((s) => {
 
 
 
-let switchs = document.getElementById("switchs")
-let circle = document.getElementById("circle")
-// let body = document.getElementById("body")
+// let switchs = document.getElementById("switchs")
+// let circle = document.getElementById("circle")
+// // let body = document.getElementById("body")
 
-switchs.addEventListener("click", () => {
-    circle.classList.toggle('translate-x-6')
+// switchs.addEventListener("click", () => {
+//     circle.classList.toggle('translate-x-6')
 
 
-    if (circle.classList.contains("translate-x-6")) {
-        body.style.background = "red"
-        circle.classList.remove("bg-red-500")
-        circle.classList.add("bg-green-500")
+//     if (circle.classList.contains("translate-x-6")) {
+//         body.style.background = "red"
+//         circle.classList.remove("bg-red-500")
+//         circle.classList.add("bg-green-500")
+
+//     }
+//     else {
+//         body.style.background = "green"
+//         circle.classList.remove("bg-green-500")
+//         circle.classList.add("bg-red-500")
+//     }
+
+
+// })
+
+
+// 
+
+let sw = document.getElementById("sw")
+let bt = document.getElementById("bt")
+
+sw.addEventListener("click", () => {
+    bt.classList.toggle("translate-x-7")
+
+    if (bt.classList.contains("translate-x-7")) {
+        document.body.style.background = "red"
+    }
+
+    else {
+        document.body.style.background = "blue"
+    }
+
+
+
+
+
+})
+
+
+let plus = document.getElementById("plus")
+let minus = document.getElementById("minus")
+let disp = document.getElementById("disp")
+
+let cout = 0
+plus.addEventListener('click', () => {
+    let kj = ++cout
+
+
+    if (kj <= 10) {
+        disp.innerHTML = kj
+        minus.disabled = false
+        minus.style.opacity = "100%"
 
     }
     else {
-        body.style.background = "green"
-        circle.classList.remove("bg-green-500")
-        circle.classList.add("bg-red-500")
+        // alert('wongr')
+        plus.disabled = true
+        plus.style.opacity = "50%"
     }
 
 
 })
+
+
+minus.addEventListener("click", () => {
+
+    let jd = --cout
+
+    if (jd >= 0) {
+        disp.innerHTML = jd
+
+        plus.disabled = false
+        plus.style.opacity = "100%"
+
+
+
+    }
+    else {
+        minus.disabled = true
+        minus.style.opacity = "50%"
+    }
+
+})
+
+
+
