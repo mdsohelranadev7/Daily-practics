@@ -4,15 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Color Filter</title>
     <link rel="stylesheet" href="src/output.css">
 </head>
 
 <body>
-    
+
+<div class="border h-180 m-5 p-5">
+
+    <input id="search" class="border flex justify-center items-center px-4" type="text" placeholder="enter product">
+
+    <div class="flex gap-x-20">
+        <button class="filter-btn" data-filter="all">all</button>
+        <button class="filter-btn" data-filter="red">red</button>
+        <button class="filter-btn" data-filter="green">green</button>
+        <button class="filter-btn" data-filter="blue">blue</button>
+        <button class="filter-btn" data-filter="black">black</button>
+        <button class="filter-btn" data-filter="teal">teal</button>
+        <button class="filter-btn" data-filter="orange">orange</button>
+    </div>
+
+    <div class="grid grid-cols-6 gap-4 pt-4">
+        <div data-color="black"  class="item border h-30 w-30 bg-black"></div>
+        <div data-color="red"    class="item border h-30 w-30 bg-red-500"></div>
+        <div data-color="black"  class="item border h-30 w-30 bg-black"></div>
+        <div data-color="blue"   class="item border h-30 w-30 bg-blue-500"></div>
+        <div data-color="red"    class="item border h-30 w-30 bg-red-500"></div>
+        <div data-color="orange" class="item border h-30 w-30 bg-orange-500"></div>
+        <div data-color="red"    class="item border h-30 w-30 bg-red-500"></div>
+        <div data-color="green"  class="item border h-30 w-30 bg-green-500"></div>
+        <div data-color="blue"   class="item border h-30 w-30 bg-blue-500"></div>
+        <div data-color="green"  class="item border h-30 w-30 bg-green-500"></div>
+        <div data-color="blue"   class="item border h-30 w-30 bg-blue-500"></div>
+        <div data-color="teal"   class="item border h-30 w-30 bg-teal-500"></div>
+        <div data-color="black"  class="item border h-30 w-30 bg-black"></div>
+        <div data-color="green"  class="item border h-30 w-30 bg-green-500"></div>
+        <div data-color="black"  class="item border h-30 w-30 bg-black"></div>
+        <div data-color="teal"   class="item border h-30 w-30 bg-teal-500"></div>
+        <div data-color="blue"   class="item border h-30 w-30 bg-blue-500"></div>
+        <div data-color="teal"   class="item border h-30 w-30 bg-teal-500"></div>
+        <div data-color="orange" class="item border h-30 w-30 bg-orange-500"></div>
+        <div data-color="orange" class="item border h-30 w-30 bg-orange-500"></div>
+        <div data-color="green"  class="item border h-30 w-30 bg-green-500"></div>
+        <div data-color="red"    class="item border h-30 w-30 bg-red-500"></div>
+        <div data-color="orange" class="item border h-30 w-30 bg-orange-500"></div>
+    </div>
+</div>
 
 
-    <script src="js/script.js"></script>
+
+
+
+<script src="js/script.js"></script>
 </body>
 
 </html>
