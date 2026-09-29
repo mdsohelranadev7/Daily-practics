@@ -260,6 +260,9 @@
   .m-50 {
     margin: calc(var(--spacing) * 50);
   }
+  .mx-auto {
+    margin-inline: auto;
+  }
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
   }
