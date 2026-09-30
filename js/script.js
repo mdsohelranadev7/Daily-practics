@@ -1,22 +1,56 @@
-let change = document.getElementById("change")
 
-change.addEventListener("click", () => {
 
-    document.body.classList.toggle("bg-black")
-    document.body.style.background = "black"
+let input = document.getElementById("input")
+let password = document.getElementById("password")
+let login = document.getElementById("login")
+let sec = document.getElementById("sec")
+let from = document.getElementById("from")
+let eyeIcon = document.getElementById("eyeIcon")
+let showPassword = document.getElementById("showPassword")
+let worng = document.getElementById("worng")
 
-    if (document.body.classList.contains("bg-black")) {
-        change.textContent = "white"
-        change.style.color="white"
+
+
+from.addEventListener("submit", (a) => {
+    a.preventDefault()
+
+    let user = input.value
+    let pass = password.value
+
+    if (user == "123" && pass == "123") {
+
+        from.style.display = "none"
+        sec.removeAttribute('hidden')
+        // cardpart.removeAttribute('hidden')
+
+
+
+
 
     }
     else {
-        document.body.style.background = "white"
-        change.textContent = "black"
-        change.style.color="black"
+
+        worng.removeAttribute("hidden")
+    }
+
+})
+
+showPassword.addEventListener("click", () => {
+
+    if (password.type === "password") {
+
+        password.type = "text"
+        eyeIcon.classList.remove('fa-eye')
+        eyeIcon.classList.add('fa-eye-slash')
+
+    }
+    else {
+        password.type = "password"
+        eyeIcon.classList.add('fa-eye')
+        eyeIcon.classList.remove('fa-eye-slash')
 
     }
 
 
+});
 
-})  
