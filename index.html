@@ -10,18 +10,120 @@
 </head>
 
 <body>
+   <form>
+      <div class="">
+         <!-- Calculator -->
+         <div id="calculator" class="w-87.5 bg-gray-900 p-5 rounded-3xl shadow-2xl">
+
+            <!-- Display -->
+            <div id="displayBox" class="bg-gray-800 rounded-2xl p-4 mb-5">
 
 
-   <div class="flex justify-center items-center flex-col mt-100 ">
-      <p id="display">00:00:00</p>
-      <div class="text-2xl">
-         <button class="cursor-pointer border" id="start">start</button>
-         <button class=" cursor-pointer border" id="stop">stop</button>
-         <button class=" cursor-pointer border" id="reset">reset</button>
+               <input id="display" type="text"
+                  class="w-full bg-transparent text-white text-4xl text-right outline-none">
+
+            </div>
+
+
+            <!-- Calculator Buttons -->
+            <div id="buttons" class="grid grid-cols-4 gap-3">
+
+               <!-- Row 1 -->
+
+               <button id="clearBtn" type="button" class="h-16 rounded-xl bg-gray-600 text-white text-xl hover:bg-gray-500">
+                  AC
+               </button>
+
+               <button id="plusMinusBtn" type="button" class="h-16 rounded-xl bg-gray-600 text-white text-xl hover:bg-gray-500">
+                  +/-
+               </button>
+
+               <button id="percentBtn" type="button" class="h-16 rounded-xl bg-gray-600 text-white text-xl hover:bg-gray-500">
+                  %
+               </button>
+
+               <button id="divideBtn" type="button" class="h-16 rounded-xl bg-orange-500 text-white text-xl hover:bg-orange-400">
+                  ÷
+               </button>
+
+
+               <!-- Row 2 -->
+
+               <button id="sevenBtn" type="button" class="h-16 rounded-xl bg-gray-800 text-white text-xl hover:bg-gray-700">
+                  7
+               </button>
+
+               <button id="eightBtn" type="button" class="h-16 rounded-xl bg-gray-800 text-white text-xl hover:bg-gray-700">
+                  8
+               </button>
+
+               <button id="nineBtn" type="button" class="h-16 rounded-xl bg-gray-800 text-white text-xl hover:bg-gray-700">
+                  9
+               </button>
+
+               <button id="multiplyBtn" type="button" class="h-16 rounded-xl bg-orange-500 text-white text-xl hover:bg-orange-400">
+                  ×
+               </button>
+
+
+               <!-- Row 3 -->
+
+               <button id="fourBtn" type="button" class="h-16 rounded-xl bg-gray-800 text-white text-xl hover:bg-gray-700">
+                  4
+               </button>
+
+               <button id="fiveBtn" type="button" class="h-16 rounded-xl bg-gray-800 text-white text-xl hover:bg-gray-700">
+                  5
+               </button>
+
+               <button id="sixBtn" type="button" class="h-16 rounded-xl bg-gray-800 text-white text-xl hover:bg-gray-700">
+                  6
+               </button>
+
+               <button id="minusBtn" type="button" class="h-16 rounded-xl bg-orange-500 text-white text-xl hover:bg-orange-400">
+                  −
+               </button>
+
+
+               <!-- Row 4 -->
+
+               <button id="oneBtn" type="button" class="h-16 rounded-xl bg-gray-800 text-white text-xl hover:bg-gray-700">
+                  1
+               </button>
+
+               <button id="twoBtn" type="button" class="h-16 rounded-xl bg-gray-800 text-white text-xl hover:bg-gray-700">
+                  2
+               </button>
+
+               <button id="threeBtn" type="button" class="h-16 rounded-xl bg-gray-800 text-white text-xl hover:bg-gray-700">
+                  3
+               </button>
+
+               <button id="plusBtn" type="button" class="h-16 rounded-xl bg-orange-500 text-white text-xl hover:bg-orange-400">
+                  +
+               </button>
+
+
+               <!-- Row 5 -->
+
+               <button id="zeroBtn" type="button" class="h-16 col-span-2 rounded-xl bg-gray-800 text-white text-xl hover:bg-gray-700">
+                  0
+               </button>
+
+               <button id="decimalBtn" type="button" class="h-16 rounded-xl bg-gray-800 text-white text-xl hover:bg-gray-700">
+                  .
+               </button>
+
+               <button id="equalBtn" type="submit" class="h-16 rounded-xl bg-green-500 text-white text-xl hover:bg-green-400">
+                  =
+               </button>
+
+            </div>
+
+         </div>
+
       </div>
-   </div>
-
-
+   </form>
    <script src="js/script.js"></script>
 </body>
 
