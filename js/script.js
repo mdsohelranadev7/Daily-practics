@@ -157,3 +157,26 @@ divideBtn.addEventListener("click", () => {
 })
 
 
+
+let ks = document.getElementById("s")
+let as = document.querySelectorAll(".product")
+
+
+
+ks.addEventListener("input", () => {
+    let df = ks.value.toLowerCase().trim()
+
+    as.forEach((product) => {
+        let ae = product.textContent.toLowerCase()
+
+        if (ae.includes(df)) {
+            d.style.display = ""
+        }
+
+        else {
+            d.style.display = "none"
+        }
+
+
+    })
+});
