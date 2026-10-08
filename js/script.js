@@ -170,13 +170,37 @@ ks.addEventListener("input", () => {
         let ae = product.textContent.toLowerCase()
 
         if (ae.includes(df)) {
-            d.style.display = ""
+            product.style.display = ""
         }
 
         else {
-            d.style.display = "none"
+            product.style.display = "none"
         }
 
 
     })
 });
+
+
+// let a = 1
+// do {
+//     console.log(a);
+//     a++
+// } while (a <= 5)
+
+
+// let str = "javascript"
+// for (let s of str) {
+//     console.log('s', s);
+// }
+
+
+let num = 25
+
+let p = prompt("gess the num")
+
+while (num != p) {
+    p = prompt("not match")
+}
+
+console.log("right");
