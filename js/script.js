@@ -158,26 +158,29 @@ divideBtn.addEventListener("click", () => {
 
 
 
-let inp = document.getElementById("s")
-let pro = document.querySelectorAll(".product")
+let serch = document.getElementById("s")
+let product = document.querySelectorAll(".product")
 
 
-inp.addEventListener("input", () => {
-    let sks = inp.value.toLowerCase().trim()
+serch.addEventListener("input", () => {
+    let val = s.value.toLowerCase().trim()
 
-    pro.forEach((sdf) => {
-        let tex = sdf.dataset.sk.toLowerCase()
+    product.forEach((sl) => {
 
+        let ak = sl.dataset.sk.toLowerCase
 
-        if (tex.includes(sks)) {
-            sdf.style.display = ""
+        if (ak.includes(val)) {
+            ak.style.display = ""
+
         }
 
         else {
-            sdf.style.display = "none"
+            ak.style.display = "none"
         }
     })
 
 
 
-});
+
+
+})
