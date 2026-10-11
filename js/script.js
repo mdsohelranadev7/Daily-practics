@@ -163,24 +163,22 @@ let product = document.querySelectorAll(".product")
 
 
 serch.addEventListener("input", () => {
-    let val = s.value.toLowerCase().trim()
+    let val = serch.value.toLowerCase().trim()
 
     product.forEach((sl) => {
 
-        let ak = sl.dataset.sk.toLowerCase
+        let ak = sl.dataset.sk.toLowerCase()
 
         if (ak.includes(val)) {
-            ak.style.display = ""
+            sl.style.display = ""
 
         }
 
         else {
-            ak.style.display = "none"
+            sl.style.display = "none"
         }
     })
 
 
-
-
-
 })
+
