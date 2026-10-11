@@ -178,7 +178,6 @@ serch.addEventListener("input", () => {
             sl.style.display = "none"
         }
     })
-
-
+    
 })
 
