@@ -158,49 +158,26 @@ divideBtn.addEventListener("click", () => {
 
 
 
-let ks = document.getElementById("s")
-let as = document.querySelectorAll(".product")
+let inp = document.getElementById("s")
+let pro = document.querySelectorAll(".product")
 
 
+inp.addEventListener("input", () => {
+    let sks = inp.value.toLowerCase().trim()
 
-ks.addEventListener("input", () => {
-    let df = ks.value.toLowerCase().trim()
+    pro.forEach((sdf) => {
+        let tex = sdf.dataset.sk.toLowerCase()
 
-    as.forEach((product) => {
-        let ae = product.textContent.toLowerCase()
 
-        if (ae.includes(df)) {
-            product.style.display = ""
+        if (tex.includes(sks)) {
+            sdf.style.display = ""
         }
 
         else {
-            product.style.display = "none"
+            sdf.style.display = "none"
         }
-
-
     })
+
+
+
 });
-
-
-// let a = 1
-// do {
-//     console.log(a);
-//     a++
-// } while (a <= 5)
-
-
-// let str = "javascript"
-// for (let s of str) {
-//     console.log('s', s);
-// }
-
-
-let num = 25
-
-let p = prompt("gess the num")
-
-while (num != p) {
-    p = prompt("not match")
-}
-
-console.log("right");
