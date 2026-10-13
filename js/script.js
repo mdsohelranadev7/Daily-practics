@@ -178,6 +178,71 @@ serch.addEventListener("input", () => {
             sl.style.display = "none"
         }
     })
-    
+
 })
 
+
+
+let timescreen = document.getElementById("timescreen")
+let start = document.getElementById("start")
+let stop = document.getElementById("stop")
+let reset = document.getElementById("reset")
+
+let minit = 0;
+let sec = 0;
+let milisec = 0;
+
+let total = null;
+
+
+function sal() {
+
+    if(total!==null){
+        clearInterval(total)
+    }
+
+    total = setInterval(() => {
+        settime()
+    }, 10);
+
+}
+
+
+
+
+
+
+function settime() {
+    milisec++
+    if (milisec == 100) {
+        milisec = 0
+        sec++
+        if (sec == 60) {
+            sec = 0
+            minit++
+        }
+    }
+
+    let min = String(minit).padStart(2, "0")
+    let se = String(sec).padStart(2, "0")
+    let mil = String(milisec).padStart(2, "0")
+
+    timescreen.textContent = `${min}:${se}:${mil}`
+
+}
+
+start.addEventListener("click", () => {
+    sal()
+})
+
+stop.addEventListener("click", () => {
+    clearInterval(total)
+
+})
+
+reset.addEventListener("click", () => {
+    clearInterval(total)
+    timescreen.textContent = "00:00:00"
+    minit = sec = milisec = 0
+
+})
