@@ -197,7 +197,7 @@ let total = null;
 
 function sal() {
 
-    if(total!==null){
+    if (total !== null) {
         clearInterval(total)
     }
 
@@ -244,5 +244,35 @@ reset.addEventListener("click", () => {
     clearInterval(total)
     timescreen.textContent = "00:00:00"
     minit = sec = milisec = 0
+
+})
+
+
+
+
+let round = document.getElementById("round")
+let btn = document.getElementById("btn")
+let icon = document.getElementById("icon")
+
+
+round.addEventListener("click", () => {
+    if (btn.classList.contains("translate-x-14")) {
+        btn.classList.remove("translate-x-14")
+        document.body.style.background = "white"
+        icon.classList.remove("fa-sun")
+        icon.classList.add("fa-moon")
+
+    }
+
+    else {
+        btn.classList.add("translate-x-14")
+        document.body.style.background = "black "
+
+
+
+        icon.classList.remove("fa-moon")
+        icon.classList.add("fa-sun")
+    }
+
 
 })
