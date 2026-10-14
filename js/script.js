@@ -382,4 +382,38 @@ pro.forEach((sas) => {
 
 
 
+let pros = [
+    { name: "shoe", price: 1220 },
+    { name: "book", price: 520 },
+    { name: "chair", price: 3420 },
+    { name: "table", price: 1320 },
+]
 
+let maxp = Infinity
+let maxpd = ""
+pros.forEach((jd) => {
+    if (jd.price < maxp) {
+        maxp = jd.price
+        maxpd = jd.name
+    }
+
+})
+
+console.log(maxpd);
+
+
+
+let pr = [
+    { name: "shoe", price: 1220 },
+    { name: "book", price: 520 },
+    { name: "chair", price: 20 },
+    { name: "table", price: 120 },
+]
+let lkd = [52]
+pr.forEach((sk) => {
+
+    lkd.push(sk.price)
+
+})
+
+console.log(lkd);
