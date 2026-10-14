@@ -293,6 +293,7 @@ add.addEventListener("click", () => {
     let span = li.querySelector("span")
     span.textContent = input
     ulbtn.appendChild(li)
+    inp.value = ""
 
 })
 
@@ -305,16 +306,14 @@ function ksl(sds) {
 deleteall.addEventListener("click", () => {
     let ks = document.querySelectorAll('input[type="checkbox"]:checked')
 
-    // ks.forEach((skd) => {
-    //     skd.parentElement.remove()
+    ks.forEach((skd) => {
+        skd.parentElement.remove()
 
-    // })
-
-
-    // ulbtn.innerHTML = ""
+    })
 
 
-    for (let i = 0; i < ks.length; i++) {
-        ks[i].parentElement.remove()
-    }
+
+
+
+
 })
