@@ -276,3 +276,45 @@ round.addEventListener("click", () => {
 
 
 })
+
+
+let inp = document.getElementById("inp")
+let add = document.getElementById("add")
+let deleteall = document.getElementById("deleteall")
+let ulbtn = document.getElementById("ulbtn")
+
+
+
+add.addEventListener("click", () => {
+    let input = inp.value
+    let li = document.createElement("li")
+
+    li.innerHTML = ' <input type="checkbox"><span></span><button onclick="ksl(this)">delete</button>'
+    let span = li.querySelector("span")
+    span.textContent = input
+    ulbtn.appendChild(li)
+
+})
+
+function ksl(sds) {
+    sds.parentElement.remove()
+
+}
+
+
+deleteall.addEventListener("click", () => {
+    let ks = document.querySelectorAll('input[type="checkbox"]:checked')
+
+    // ks.forEach((skd) => {
+    //     skd.parentElement.remove()
+
+    // })
+
+
+    // ulbtn.innerHTML = ""
+
+
+    for (let i = 0; i < ks.length; i++) {
+        ks[i].parentElement.remove()
+    }
+})
