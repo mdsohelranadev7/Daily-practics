@@ -312,8 +312,74 @@ deleteall.addEventListener("click", () => {
     })
 
 
+})
 
+let num = [1, 2, 3, 4, 5]
+console.log(num);
 
+num.forEach((item) => {
+
+    if (item > 3) {
+        console.log(item);
+
+    }
 
 
 })
+
+let sk = [2, 5, 28, 58, 5, 95, 45,]
+
+for (let i = 0; i < sk.length; i++) {
+
+    console.log(sk[4]);
+
+
+
+}
+sk.forEach((item) => {
+    console.log(item);
+
+})
+
+
+let products = [
+    { name: "shoe", price: 1120 },
+    { name: "book", price: 520 },
+    { name: "chair", price: 320 },
+]
+
+let totals = 0
+
+products.forEach((sdf) => {
+    // let lsl = sdf
+    // console.log(lsl);
+
+    totals += sdf.price
+    console.log(totals);
+
+})
+
+
+let pro = [
+    { name: "shoe", price: 1220 },
+    { name: "book", price: 520 },
+    { name: "chair", price: 320 },
+    { name: "table", price: 1320 },
+]
+
+pro.forEach((sas) => {
+
+    if (sas.price > 1000) {
+
+        console.log(sas.name + "-" + 'expensive');
+    }
+    else {
+        console.log(sas.name + "-" + 'cheep');
+    }
+
+
+})
+
+
+
+
