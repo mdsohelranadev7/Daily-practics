@@ -417,3 +417,22 @@ pr.forEach((sk) => {
 })
 
 console.log(lkd);
+
+
+let cptext = document.getElementById("cptext")
+let copy = document.getElementById("copy")
+
+
+copy.addEventListener("click", () => {
+
+    cptext.classList.remove("opacity-0")
+    cptext.classList.remove("translate-x-full")
+
+
+    setTimeout(() => {
+        cptext.classList.add("opacity-0")
+        cptext.classList.add("translate-x-full")
+
+
+    }, 2000)
+})
