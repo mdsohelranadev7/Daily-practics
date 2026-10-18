@@ -436,3 +436,55 @@ copy.addEventListener("click", () => {
 
     }, 2000)
 })
+
+let on = document.getElementById("on")
+let rou = document.getElementById("rou")
+
+rou.addEventListener("click", () => {
+    if (on.classList.contains("translate-x-14")) {
+        on.classList.remove("translate-x-14")
+        on.innerHTML = 'on'
+        document.body.style.background = "white"
+    }
+    else {
+        on.classList.add("translate-x-14")
+        document.body.style.background = "black"
+        on.innerHTML = 'off'
+
+    }
+
+
+})
+
+let track = document.getElementById("track")
+let prev = document.getElementById("prev")
+let next = document.getElementById("next")
+
+
+let totala = track.children.length;
+let index = 0
+
+
+function sliders() {
+
+    track.style.transform = `translateX(-${index * 100}%)`
+}
+
+
+
+
+
+next.addEventListener("click", () => {
+   index--
+    if (index < 0) index = totala - 1
+    sliders()
+
+})
+
+prev.addEventListener("click", () => {
+    
+ index++
+    if (index >= totala) index = 0
+    sliders()
+    
+})  

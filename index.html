@@ -211,7 +211,8 @@
 
 
    <div class=" h-50 w-50 m-10 border relative">
-      <span id="cptext" class="border absolute right-0 top-0 p-1 translate-x-full duration-400 transition inline-block opacity-0">Copy
+      <span id="cptext"
+         class="border absolute right-0 top-0 p-1 translate-x-full duration-400 transition inline-block opacity-0">Copy
          text</span>
       <button id="copy" class="border mt-10">copy</button>
    </div>
@@ -225,13 +226,27 @@
 
 
 
+   <div id="rou" class=" py-2 px-5 bg-amber-400 w-35 m-10 rounded-4xl">
+      <button id="on" class="bg-amber-50 rounded-full p-2 duration-500">on</button>
+   </div>
 
 
 
 
+<div class="relative w-80 h-40 overflow-hidden border m-5">
 
+   <div id="track" class="flex h-full transition-transform duration-500">
+      <div class="bg-red-400 w-full shrink-0 flex items-center justify-center text-3xl">1</div>
+      <div class="bg-green-400 w-full shrink-0 flex items-center justify-center text-3xl">2</div>
+      <div class="bg-blue-400 w-full shrink-0 flex items-center justify-center text-3xl">3</div>
+   </div>
 
+</div>
 
+<div class="m-5 flex gap-3">
+   <button id="prev" class="px-4 py-2 bg-gray-800 text-white rounded">◀ আগের</button>
+   <button id="next" class="px-4 py-2 bg-gray-800 text-white rounded">পরের ▶</button>
+</div>
 
    <script src="js/script.js"></script>
 </body>
