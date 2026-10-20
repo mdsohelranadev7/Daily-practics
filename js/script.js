@@ -183,6 +183,8 @@ serch.addEventListener("input", () => {
 
 
 
+
+
 let timescreen = document.getElementById("timescreen")
 let start = document.getElementById("start")
 let stop = document.getElementById("stop")
@@ -456,35 +458,28 @@ rou.addEventListener("click", () => {
 
 })
 
-let track = document.getElementById("track")
-let prev = document.getElementById("prev")
-let next = document.getElementById("next")
 
 
-let totala = track.children.length;
-let index = 0
+let inps = document.getElementById("inps")
+let productt = document.querySelectorAll(".productt")
 
 
-function sliders() {
+inps.addEventListener("input", () => {
+    let ew = inps.value.toLowerCase().trim()
 
-    track.style.transform = `translateX(-${index * 100}%)`
-}
-
-
-
+    productt.forEach((sks) => {
+        let ala = sks.dataset.name.toLowerCase()
 
 
-next.addEventListener("click", () => {
-   index--
-    if (index < 0) index = totala - 1
-    sliders()
+        if (ala.includes(ew)) {
+            sks.style.display = ""
+        }
+
+        else {
+            sks.style.display = "none"
+        }
+
+    })
+
 
 })
-
-prev.addEventListener("click", () => {
-    
- index++
-    if (index >= totala) index = 0
-    sliders()
-    
-})  
