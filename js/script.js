@@ -483,3 +483,28 @@ inps.addEventListener("input", () => {
 
 
 })
+
+
+
+
+
+let arr = [23, 35, 58, 16, 38, 12, 92]
+
+ arr.map((s) => {
+    console.log(s);
+
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
