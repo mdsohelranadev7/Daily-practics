@@ -526,19 +526,29 @@ btns.addEventListener("click", () => {
 
 let bg = document.getElementById("bg")
 let colorBtn = document.getElementById("colorBtn")
+let ins = document.getElementById("ins")
 
-let red = Math.floor(Math.random(2*255))
 
-console.log(red);
+
 function random() {
+    let red = Math.floor(Math.random() * 255)
+    let green = Math.floor(Math.random() * 255)
+    let blue = Math.floor(Math.random() * 255)
+
+    return `rgb(${red}, ${green},${blue})`
 
 
 }
 
-console.log(random.red);
 
+colorBtn.addEventListener("click", () => {
 
-clearBtn.addEventListener("click", () => {
+    let ran = random()
+    console.log(ran);
+
+    bg.style.background = ran
+
+    ins.value = ran
 
 
 
