@@ -490,11 +490,60 @@ inps.addEventListener("input", () => {
 
 let arr = [23, 35, 58, 16, 38, 12, 92]
 
- arr.map((s) => {
+arr.map((s) => {
     console.log(s);
 
 
 })
+
+
+
+let btns = document.getElementById("btns")
+
+btns.addEventListener("click", () => {
+    btns.classList.toggle("active")
+
+    if (btns.classList.contains('active')) {
+
+        document.body.style.background = "black"
+        btns.style.color = 'white'
+        btns.innerHTML = "Light"
+
+        btns.classList.add("translate-x-16")
+    }
+
+    else {
+        btns.classList.remove("translate-x-16")
+        document.body.style.background = "White"
+        btns.style.color = 'black'
+        btns.innerHTML = "Dark"
+
+
+    }
+
+})
+
+
+let bg = document.getElementById("bg")
+let colorBtn = document.getElementById("colorBtn")
+
+let red = Math.floor(Math.random(2*255))
+
+console.log(red);
+function random() {
+
+
+}
+
+console.log(random.red);
+
+
+clearBtn.addEventListener("click", () => {
+
+
+
+})
+
 
 
 
