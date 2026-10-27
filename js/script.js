@@ -252,33 +252,6 @@ reset.addEventListener("click", () => {
 
 
 
-let round = document.getElementById("round")
-let btn = document.getElementById("btn")
-let icon = document.getElementById("icon")
-
-
-round.addEventListener("click", () => {
-    if (btn.classList.contains("translate-x-14")) {
-        btn.classList.remove("translate-x-14")
-        document.body.style.background = "white"
-        icon.classList.remove("fa-sun")
-        icon.classList.add("fa-moon")
-
-    }
-
-    else {
-        btn.classList.add("translate-x-14")
-        document.body.style.background = "black "
-
-
-
-        icon.classList.remove("fa-moon")
-        icon.classList.add("fa-sun")
-    }
-
-
-})
-
 
 let inp = document.getElementById("inp")
 let add = document.getElementById("add")
@@ -565,5 +538,31 @@ colorBtn.addEventListener("click", () => {
 
 
 
+let ip = document.getElementById("ip")
+let a = document.getElementById("a")
+let al = document.getElementById("al")
+let u = document.getElementById("u")
+
+
+
+a.addEventListener("click", () => {
+    let input = ip.value
+
+    let li = document.createElement("li")
+    let bu = document.createElement("button")
+    bu.textContent = "delete"
+    li.innerHTML = input
+
+    bu.addEventListener("click", () => {
+        li.remove()
+
+    })
+
+    u.appendChild(li)
+    li.appendChild(bu)
+
+
+
+})
 
 
