@@ -531,11 +531,11 @@ let ins = document.getElementById("ins")
 
 
 function random() {
-    let red = Math.floor(Math.random() * 255)
-    let green = Math.floor(Math.random() * 255)
-    let blue = Math.floor(Math.random() * 255)
+    let redf = Math.floor(Math.random() * 255)
+    let greenf = Math.floor(Math.random() * 255)
+    let bluef = Math.floor(Math.random() * 255)
 
-    return `rgb(${red}, ${green},${blue})`
+    return `rgb(${redf}, ${greenf},${bluef})`
 
 
 }
