@@ -566,3 +566,21 @@ a.addEventListener("click", () => {
 })
 
 
+
+
+
+let sls = document.getElementById("sls")
+
+
+let aa = [2, 15, 5, 63, 9]
+
+
+
+
+let la = aa.filter((s) => {
+    return 
+
+})
+
+
+console.log(la);
