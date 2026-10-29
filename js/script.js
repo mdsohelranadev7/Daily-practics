@@ -570,17 +570,24 @@ a.addEventListener("click", () => {
 
 
 let sls = document.getElementById("sls")
+let ckl = document.getElementById("ckl")
+
+
 
 
 let aa = [2, 15, 5, 63, 9]
 
 
 
+ckl.addEventListener("click", () => {
 
-let la = aa.filter((s) => {
-    return 
+    let skks = sls.value.split(" ").map(Number)
+    let inpa = skks.filter((f) => {
+        return f > 5
 
+    })
+
+
+    console.log(inpa);
 })
 
-
-console.log(la);
