@@ -591,3 +591,16 @@ ckl.addEventListener("click", () => {
     console.log(inpa);
 })
 
+let arra = ['apple', 'orang', 'manglo']
+console.log(arra);
+
+
+const student = {
+    name: 'sohel rana',
+    mark: 51,
+
+
+}
+
+console.log(student.push);
+
