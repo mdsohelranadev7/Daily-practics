@@ -537,3 +537,10 @@ po.then((res) => {
     console.log(res);
   });
 });
+
+
+
+async function ls() {
+  console.log("hello");
+}
+console.log(ls());
