@@ -1,194 +1,152 @@
-
-
-
-
-let clearBtn = document.getElementById("clearBtn")
-let plusMinusBtn = document.getElementById("plusMinusBtn")
-let percentBtn = document.getElementById("percentBtn")
-let divideBtn = document.getElementById("divideBtn")
-let sevenBtn = document.getElementById("sevenBtn")
-let eightBtn = document.getElementById("eightBtn")
-let nineBtn = document.getElementById("nineBtn")
-let multiplyBtn = document.getElementById("multiplyBtn")
-let fourBtn = document.getElementById("fourBtn")
-let fiveBtn = document.getElementById("fiveBtn")
-let sixBtn = document.getElementById("sixBtn")
-let minusBtn = document.getElementById("minusBtn")
-let oneBtn = document.getElementById("oneBtn")
-let twoBtn = document.getElementById("twoBtn")
-let threeBtn = document.getElementById("threeBtn")
-let plusBtn = document.getElementById("plusBtn")
-let zeroBtn = document.getElementById("zeroBtn")
-let decimalBtn = document.getElementById("decimalBtn")
-let equalBtn = document.getElementById("equalBtn")
-let display = document.getElementById("display")
-let froms = document.querySelector("form")
-
-
+let clearBtn = document.getElementById("clearBtn");
+let plusMinusBtn = document.getElementById("plusMinusBtn");
+let percentBtn = document.getElementById("percentBtn");
+let divideBtn = document.getElementById("divideBtn");
+let sevenBtn = document.getElementById("sevenBtn");
+let eightBtn = document.getElementById("eightBtn");
+let nineBtn = document.getElementById("nineBtn");
+let multiplyBtn = document.getElementById("multiplyBtn");
+let fourBtn = document.getElementById("fourBtn");
+let fiveBtn = document.getElementById("fiveBtn");
+let sixBtn = document.getElementById("sixBtn");
+let minusBtn = document.getElementById("minusBtn");
+let oneBtn = document.getElementById("oneBtn");
+let twoBtn = document.getElementById("twoBtn");
+let threeBtn = document.getElementById("threeBtn");
+let plusBtn = document.getElementById("plusBtn");
+let zeroBtn = document.getElementById("zeroBtn");
+let decimalBtn = document.getElementById("decimalBtn");
+let equalBtn = document.getElementById("equalBtn");
+let display = document.getElementById("display");
+let froms = document.querySelector("form");
 
 froms.addEventListener("submit", (s) => {
-    s.preventDefault();
-
-})
+  s.preventDefault();
+});
 
 equalBtn.addEventListener("click", () => {
-    let dis = display.value
-    let result = eval(dis)
-    console.log(result);
-    // display.focus()
-    clearInterval(focus)
-    display.value = result
-
-
-})
-
+  let dis = display.value;
+  let result = eval(dis);
+  console.log(result);
+  // display.focus()
+  clearInterval(focus);
+  display.value = result;
+});
 
 clearBtn.addEventListener("click", () => {
-    display.value = ""
-    display.focus()
-
-})
-
+  display.value = "";
+  display.focus();
+});
 
 sevenBtn.addEventListener("click", () => {
-    let dis = display.value
-    display.focus()
-    display.value = dis + "7"
-
-})
+  let dis = display.value;
+  display.focus();
+  display.value = dis + "7";
+});
 
 eightBtn.addEventListener("click", () => {
-    let dis = display.value
-    display.focus()
-    display.value = dis + "8"
-
-})
+  let dis = display.value;
+  display.focus();
+  display.value = dis + "8";
+});
 
 nineBtn.addEventListener("click", () => {
-    let dis = display.value
-    display.focus()
-    display.value = dis + "9"
-
-})
+  let dis = display.value;
+  display.focus();
+  display.value = dis + "9";
+});
 
 fourBtn.addEventListener("click", () => {
-    let dis = display.value
-    display.focus()
-    display.value = dis + "4"
-
-})
+  let dis = display.value;
+  display.focus();
+  display.value = dis + "4";
+});
 
 fiveBtn.addEventListener("click", () => {
-    let dis = display.value
-    display.focus()
-    display.value = dis + "5"
-
-})
+  let dis = display.value;
+  display.focus();
+  display.value = dis + "5";
+});
 
 sixBtn.addEventListener("click", () => {
-    let dis = display.value
-    display.focus()
-    display.value = dis + "6"
-
-})
+  let dis = display.value;
+  display.focus();
+  display.value = dis + "6";
+});
 
 oneBtn.addEventListener("click", () => {
-    let dis = display.value
-    display.focus()
-    display.value = dis + "1"
-
-})
+  let dis = display.value;
+  display.focus();
+  display.value = dis + "1";
+});
 
 twoBtn.addEventListener("click", () => {
-    let dis = display.value
+  let dis = display.value;
 
-    display.focus()
-    display.value = dis + "2"
-
-})
+  display.focus();
+  display.value = dis + "2";
+});
 
 threeBtn.addEventListener("click", () => {
-    let dis = display.value
-    display.focus()
-    display.value = dis + "3"
-
-})
+  let dis = display.value;
+  display.focus();
+  display.value = dis + "3";
+});
 zeroBtn.addEventListener("click", () => {
-    let dis = display.value
-    display.focus()
-    display.value = dis + "0"
-
-})
+  let dis = display.value;
+  display.focus();
+  display.value = dis + "0";
+});
 decimalBtn.addEventListener("click", () => {
-    let dis = display.value
-    display.focus()
-    display.value = dis + "."
-
-})
-
+  let dis = display.value;
+  display.focus();
+  display.value = dis + ".";
+});
 
 plusBtn.addEventListener("click", () => {
-    let dis = display.value
-    display.focus()
-    display.value = dis + "+"
-
-})
-
+  let dis = display.value;
+  display.focus();
+  display.value = dis + "+";
+});
 
 minusBtn.addEventListener("click", () => {
-    let dis = display.value
-    display.focus()
-    display.value = dis + "-"
-
-})
-
+  let dis = display.value;
+  display.focus();
+  display.value = dis + "-";
+});
 
 multiplyBtn.addEventListener("click", () => {
-    let dis = display.value
-    display.focus()
-    display.value = dis + "*"
-
-})
+  let dis = display.value;
+  display.focus();
+  display.value = dis + "*";
+});
 divideBtn.addEventListener("click", () => {
-    let dis = display.value
-    display.focus()
-    display.value = dis + "/"
+  let dis = display.value;
+  display.focus();
+  display.value = dis + "/";
+});
 
-})
-
-
-
-let serch = document.getElementById("s")
-let product = document.querySelectorAll(".product")
-
+let serch = document.getElementById("s");
+let product = document.querySelectorAll(".product");
 
 serch.addEventListener("input", () => {
-    let val = serch.value.toLowerCase().trim()
+  let val = serch.value.toLowerCase().trim();
 
-    product.forEach((sl) => {
+  product.forEach((sl) => {
+    let ak = sl.dataset.sk.toLowerCase();
 
-        let ak = sl.dataset.sk.toLowerCase()
+    if (ak.includes(val)) {
+      sl.style.display = "";
+    } else {
+      sl.style.display = "none";
+    }
+  });
+});
 
-        if (ak.includes(val)) {
-            sl.style.display = ""
-
-        }
-
-        else {
-            sl.style.display = "none"
-        }
-    })
-
-})
-
-
-
-
-
-let timescreen = document.getElementById("timescreen")
-let start = document.getElementById("start")
-let stop = document.getElementById("stop")
-let reset = document.getElementById("reset")
+let timescreen = document.getElementById("timescreen");
+let start = document.getElementById("start");
+let stop = document.getElementById("stop");
+let reset = document.getElementById("reset");
 
 let minit = 0;
 let sec = 0;
@@ -196,411 +154,386 @@ let milisec = 0;
 
 let total = null;
 
-
 function sal() {
+  if (total !== null) {
+    clearInterval(total);
+  }
 
-    if (total !== null) {
-        clearInterval(total)
-    }
-
-    total = setInterval(() => {
-        settime()
-    }, 10);
-
+  total = setInterval(() => {
+    settime();
+  }, 10);
 }
 
-
-
-
-
-
 function settime() {
-    milisec++
-    if (milisec == 100) {
-        milisec = 0
-        sec++
-        if (sec == 60) {
-            sec = 0
-            minit++
-        }
+  milisec++;
+  if (milisec == 100) {
+    milisec = 0;
+    sec++;
+    if (sec == 60) {
+      sec = 0;
+      minit++;
     }
+  }
 
-    let min = String(minit).padStart(2, "0")
-    let se = String(sec).padStart(2, "0")
-    let mil = String(milisec).padStart(2, "0")
+  let min = String(minit).padStart(2, "0");
+  let se = String(sec).padStart(2, "0");
+  let mil = String(milisec).padStart(2, "0");
 
-    timescreen.textContent = `${min}:${se}:${mil}`
-
+  timescreen.textContent = `${min}:${se}:${mil}`;
 }
 
 start.addEventListener("click", () => {
-    sal()
-})
+  sal();
+});
 
 stop.addEventListener("click", () => {
-    clearInterval(total)
-
-})
+  clearInterval(total);
+});
 
 reset.addEventListener("click", () => {
-    clearInterval(total)
-    timescreen.textContent = "00:00:00"
-    minit = sec = milisec = 0
+  clearInterval(total);
+  timescreen.textContent = "00:00:00";
+  minit = sec = milisec = 0;
+});
 
-})
-
-
-
-
-
-let inp = document.getElementById("inp")
-let add = document.getElementById("add")
-let deleteall = document.getElementById("deleteall")
-let ulbtn = document.getElementById("ulbtn")
-
-
+let inp = document.getElementById("inp");
+let add = document.getElementById("add");
+let deleteall = document.getElementById("deleteall");
+let ulbtn = document.getElementById("ulbtn");
 
 add.addEventListener("click", () => {
-    let input = inp.value
-    let li = document.createElement("li")
+  let input = inp.value;
+  let li = document.createElement("li");
 
-    li.innerHTML = ' <input type="checkbox"><span></span><button onclick="ksl(this)">delete</button>'
-    let span = li.querySelector("span")
-    span.textContent = input
-    ulbtn.appendChild(li)
-    inp.value = ""
-
-})
+  li.innerHTML =
+    ' <input type="checkbox"><span></span><button onclick="ksl(this)">delete</button>';
+  let span = li.querySelector("span");
+  span.textContent = input;
+  ulbtn.appendChild(li);
+  inp.value = "";
+});
 
 function ksl(sds) {
-    sds.parentElement.remove()
-
+  sds.parentElement.remove();
 }
 
-
 deleteall.addEventListener("click", () => {
-    let ks = document.querySelectorAll('input[type="checkbox"]:checked')
+  let ks = document.querySelectorAll('input[type="checkbox"]:checked');
 
-    ks.forEach((skd) => {
-        skd.parentElement.remove()
+  ks.forEach((skd) => {
+    skd.parentElement.remove();
+  });
+});
 
-    })
-
-
-})
-
-let num = [1, 2, 3, 4, 5]
+let num = [1, 2, 3, 4, 5];
 console.log(num);
 
 num.forEach((item) => {
+  if (item > 3) {
+    console.log(item);
+  }
+});
 
-    if (item > 3) {
-        console.log(item);
-
-    }
-
-
-})
-
-let sk = [2, 5, 28, 58, 5, 95, 45,]
+let sk = [2, 5, 28, 58, 5, 95, 45];
 
 for (let i = 0; i < sk.length; i++) {
-
-    console.log(sk[4]);
-
-
-
+  console.log(sk[4]);
 }
 sk.forEach((item) => {
-    console.log(item);
-
-})
-
+  console.log(item);
+});
 
 let products = [
-    { name: "shoe", price: 1120 },
-    { name: "book", price: 520 },
-    { name: "chair", price: 320 },
-]
+  { name: "shoe", price: 1120 },
+  { name: "book", price: 520 },
+  { name: "chair", price: 320 },
+];
 
-let totals = 0
+let totals = 0;
 
 products.forEach((sdf) => {
-    // let lsl = sdf
-    // console.log(lsl);
+  // let lsl = sdf
+  // console.log(lsl);
 
-    totals += sdf.price
-    console.log(totals);
-
-})
-
+  totals += sdf.price;
+  console.log(totals);
+});
 
 let pro = [
-    { name: "shoe", price: 1220 },
-    { name: "book", price: 520 },
-    { name: "chair", price: 320 },
-    { name: "table", price: 1320 },
-]
+  { name: "shoe", price: 1220 },
+  { name: "book", price: 520 },
+  { name: "chair", price: 320 },
+  { name: "table", price: 1320 },
+];
 
 pro.forEach((sas) => {
-
-    if (sas.price > 1000) {
-
-        console.log(sas.name + "-" + 'expensive');
-    }
-    else {
-        console.log(sas.name + "-" + 'cheep');
-    }
-
-
-})
-
-
+  if (sas.price > 1000) {
+    console.log(sas.name + "-" + "expensive");
+  } else {
+    console.log(sas.name + "-" + "cheep");
+  }
+});
 
 let pros = [
-    { name: "shoe", price: 1220 },
-    { name: "book", price: 520 },
-    { name: "chair", price: 3420 },
-    { name: "table", price: 1320 },
-]
+  { name: "shoe", price: 1220 },
+  { name: "book", price: 520 },
+  { name: "chair", price: 3420 },
+  { name: "table", price: 1320 },
+];
 
-let maxp = Infinity
-let maxpd = ""
+let maxp = Infinity;
+let maxpd = "";
 pros.forEach((jd) => {
-    if (jd.price < maxp) {
-        maxp = jd.price
-        maxpd = jd.name
-    }
-
-})
+  if (jd.price < maxp) {
+    maxp = jd.price;
+    maxpd = jd.name;
+  }
+});
 
 console.log(maxpd);
 
-
-
 let pr = [
-    { name: "shoe", price: 1220 },
-    { name: "book", price: 520 },
-    { name: "chair", price: 20 },
-    { name: "table", price: 120 },
-]
-let lkd = [52]
+  { name: "shoe", price: 1220 },
+  { name: "book", price: 520 },
+  { name: "chair", price: 20 },
+  { name: "table", price: 120 },
+];
+let lkd = [52];
 pr.forEach((sk) => {
-
-    lkd.push(sk.price)
-
-})
+  lkd.push(sk.price);
+});
 
 console.log(lkd);
 
-
-let cptext = document.getElementById("cptext")
-let copy = document.getElementById("copy")
-
+let cptext = document.getElementById("cptext");
+let copy = document.getElementById("copy");
 
 copy.addEventListener("click", () => {
+  cptext.classList.remove("opacity-0");
+  cptext.classList.remove("translate-x-full");
 
-    cptext.classList.remove("opacity-0")
-    cptext.classList.remove("translate-x-full")
+  setTimeout(() => {
+    cptext.classList.add("opacity-0");
+    cptext.classList.add("translate-x-full");
+  }, 2000);
+});
 
-
-    setTimeout(() => {
-        cptext.classList.add("opacity-0")
-        cptext.classList.add("translate-x-full")
-
-
-    }, 2000)
-})
-
-let on = document.getElementById("on")
-let rou = document.getElementById("rou")
+let on = document.getElementById("on");
+let rou = document.getElementById("rou");
 
 rou.addEventListener("click", () => {
-    if (on.classList.contains("translate-x-14")) {
-        on.classList.remove("translate-x-14")
-        on.innerHTML = 'on'
-        document.body.style.background = "white"
-    }
-    else {
-        on.classList.add("translate-x-14")
-        document.body.style.background = "black"
-        on.innerHTML = 'off'
+  if (on.classList.contains("translate-x-14")) {
+    on.classList.remove("translate-x-14");
+    on.innerHTML = "on";
+    document.body.style.background = "white";
+  } else {
+    on.classList.add("translate-x-14");
+    document.body.style.background = "black";
+    on.innerHTML = "off";
+  }
+});
 
-    }
-
-
-})
-
-
-
-let inps = document.getElementById("inps")
-let productt = document.querySelectorAll(".productt")
-
+let inps = document.getElementById("inps");
+let productt = document.querySelectorAll(".productt");
 
 inps.addEventListener("input", () => {
-    let ew = inps.value.toLowerCase().trim()
+  let ew = inps.value.toLowerCase().trim();
 
-    productt.forEach((sks) => {
-        let ala = sks.dataset.name.toLowerCase()
+  productt.forEach((sks) => {
+    let ala = sks.dataset.name.toLowerCase();
 
+    if (ala.includes(ew)) {
+      sks.style.display = "";
+    } else {
+      sks.style.display = "none";
+    }
+  });
+});
 
-        if (ala.includes(ew)) {
-            sks.style.display = ""
-        }
-
-        else {
-            sks.style.display = "none"
-        }
-
-    })
-
-
-})
-
-
-
-
-
-let arr = [23, 35, 58, 16, 38, 12, 92]
+let arr = [23, 35, 58, 16, 38, 12, 92];
 
 arr.map((s) => {
-    console.log(s);
+  console.log(s);
+});
 
-
-})
-
-
-
-let btns = document.getElementById("btns")
+let btns = document.getElementById("btns");
 
 btns.addEventListener("click", () => {
-    btns.classList.toggle("active")
+  btns.classList.toggle("active");
 
-    if (btns.classList.contains('active')) {
+  if (btns.classList.contains("active")) {
+    document.body.style.background = "black";
+    btns.style.color = "white";
+    btns.innerHTML = "Light";
 
-        document.body.style.background = "black"
-        btns.style.color = 'white'
-        btns.innerHTML = "Light"
+    btns.classList.add("translate-x-16");
+  } else {
+    btns.classList.remove("translate-x-16");
+    document.body.style.background = "White";
+    btns.style.color = "black";
+    btns.innerHTML = "Dark";
+  }
+});
 
-        btns.classList.add("translate-x-16")
-    }
-
-    else {
-        btns.classList.remove("translate-x-16")
-        document.body.style.background = "White"
-        btns.style.color = 'black'
-        btns.innerHTML = "Dark"
-
-
-    }
-
-})
-
-
-let bg = document.getElementById("bg")
-let colorBtn = document.getElementById("colorBtn")
-let ins = document.getElementById("ins")
-
-
+let bg = document.getElementById("bg");
+let colorBtn = document.getElementById("colorBtn");
+let ins = document.getElementById("ins");
 
 function random() {
-    let redf = Math.floor(Math.random() * 255)
-    let greenf = Math.floor(Math.random() * 255)
-    let bluef = Math.floor(Math.random() * 255)
+  let redf = Math.floor(Math.random() * 255);
+  let greenf = Math.floor(Math.random() * 255);
+  let bluef = Math.floor(Math.random() * 255);
 
-    return `rgb(${redf}, ${greenf},${bluef})`
-
-
+  return `rgb(${redf}, ${greenf},${bluef})`;
 }
-
 
 colorBtn.addEventListener("click", () => {
+  let ran = random();
+  console.log(ran);
 
-    let ran = random()
-    console.log(ran);
+  bg.style.background = ran;
 
-    bg.style.background = ran
+  ins.value = ran;
+});
 
-    ins.value = ran
-
-
-
-})
-
-
-
-
-
-
-
-
-
-
-
-
-let ip = document.getElementById("ip")
-let a = document.getElementById("a")
-let al = document.getElementById("al")
-let u = document.getElementById("u")
-
-
+let ip = document.getElementById("ip");
+let a = document.getElementById("a");
+let al = document.getElementById("al");
+let u = document.getElementById("u");
 
 a.addEventListener("click", () => {
-    let input = ip.value
+  let input = ip.value;
 
-    let li = document.createElement("li")
-    let bu = document.createElement("button")
-    bu.textContent = "delete"
-    li.innerHTML = input
+  let li = document.createElement("li");
+  let bu = document.createElement("button");
+  bu.textContent = "delete";
+  li.innerHTML = input;
 
-    bu.addEventListener("click", () => {
-        li.remove()
+  bu.addEventListener("click", () => {
+    li.remove();
+  });
 
-    })
+  u.appendChild(li);
+  li.appendChild(bu);
+});
 
-    u.appendChild(li)
-    li.appendChild(bu)
+let sls = document.getElementById("sls");
+let ckl = document.getElementById("ckl");
 
-
-
-})
-
-
-
-
-
-let sls = document.getElementById("sls")
-let ckl = document.getElementById("ckl")
-
-
-
-
-let aa = [2, 15, 5, 63, 9]
-
-
+let aa = [2, 15, 5, 63, 9];
 
 ckl.addEventListener("click", () => {
+  let skks = sls.value.split(" ").map(Number);
+  let inpa = skks.filter((f) => {
+    return f > 5;
+  });
 
-    let skks = sls.value.split(" ").map(Number)
-    let inpa = skks.filter((f) => {
-        return f > 5
+  console.log(inpa);
+});
 
-    })
-
-
-    console.log(inpa);
-})
-
-let arra = ['apple', 'orang', 'manglo']
+let arra = ["apple", "orang", "manglo"];
 console.log(arra);
 
-
-const student = {
-    name: 'sohel rana',
-    mark: 51,
-
-
+function disp(some) {
+  console.log("out", some);
 }
 
-console.log(student.push);
+function cal(a, b) {
+  let total = a + b;
 
+  disp(total);
+}
+
+cal(5, 5);
+
+function di(s) {
+  console.log(s);
+}
+
+function cl(a, b, callback) {
+  let sum = a + b;
+  callback(sum);
+}
+cl(2, 8, di);
+
+let name = document.getElementById("name");
+let pass = document.getElementById("pass");
+let log = document.getElementById("log");
+let main = document.getElementById("main");
+let newa = document.getElementById("newa");
+let slss = document.getElementById("slss");
+
+slss.addEventListener("submit", (s) => {
+  s.preventDefault();
+
+  if ((name.value == "123") & (pass.value == "123")) {
+    main.style.display = "none";
+  } else {
+    alert("worng");
+  }
+
+  newa.removeAttribute("hidden");
+});
+
+// let prosa = new Promise((resolve, reject) => {
+//     setInterval(() => {
+//         const ok = true
+//         if (ok) {
+//             resolve("right")
+
+//         }
+//         else {
+//             reject("wrong")
+//         }
+
+//     }, 10000);
+
+// })
+
+// console.log(prosa);
+
+const getpromise = () => {
+  return new Promise((resolve, reject) => {
+    console.log("hello i am sohel ");
+    resolve("succes");
+  });
+};
+
+let sPromise = getpromise();
+
+sPromise.then((res) => {
+  // console.log("promise fullfild", res);
+});
+
+const pone = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("hello sohel");
+      resolve("ok");
+    }, 2000);
+  });
+};
+
+const ptwo = () => {
+  // console.log("procesing");
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("sfsf");
+
+      resolve("ok");
+    }, 2000);
+  });
+};
+
+console.log("procesing1");
+
+let po = pone();
+po.then((res) => {
+  console.log(res);
+
+  console.log("procesing2");
+  let l = ptwo();
+  l.then((res) => {
+    console.log(res);
+  });
+});
