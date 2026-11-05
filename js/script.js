@@ -356,191 +356,216 @@ arr.map((s) => {
   console.log(s);
 });
 
-let btns = document.getElementById("btns");
+// let btns = document.getElementById("btns");
 
-btns.addEventListener("click", () => {
-  btns.classList.toggle("active");
+// btns.addEventListener("click", () => {
+//   btns.classList.toggle("active");
 
-  if (btns.classList.contains("active")) {
-    document.body.style.background = "black";
-    btns.style.color = "white";
-    btns.innerHTML = "Light";
+//   if (btns.classList.contains("active")) {
+//     document.body.style.background = "black";
+//     btns.style.color = "white";
+//     btns.innerHTML = "Light";
 
-    btns.classList.add("translate-x-16");
-  } else {
-    btns.classList.remove("translate-x-16");
-    document.body.style.background = "White";
-    btns.style.color = "black";
-    btns.innerHTML = "Dark";
-  }
-});
+//     btns.classList.add("translate-x-16");
+//   } else {
+//     btns.classList.remove("translate-x-16");
+//     document.body.style.background = "White";
+//     btns.style.color = "black";
+//     btns.innerHTML = "Dark";
+//   }
+// });
 
-let bg = document.getElementById("bg");
-let colorBtn = document.getElementById("colorBtn");
-let ins = document.getElementById("ins");
+// let bg = document.getElementById("bg");
+// let colorBtn = document.getElementById("colorBtn");
+// let ins = document.getElementById("ins");
 
-function random() {
-  let redf = Math.floor(Math.random() * 255);
-  let greenf = Math.floor(Math.random() * 255);
-  let bluef = Math.floor(Math.random() * 255);
+// function random() {
+//   let redf = Math.floor(Math.random() * 255);
+//   let greenf = Math.floor(Math.random() * 255);
+//   let bluef = Math.floor(Math.random() * 255);
 
-  return `rgb(${redf}, ${greenf},${bluef})`;
-}
+//   return `rgb(${redf}, ${greenf},${bluef})`;
+// }
 
-colorBtn.addEventListener("click", () => {
-  let ran = random();
-  console.log(ran);
+// colorBtn.addEventListener("click", () => {
+//   let ran = random();
+//   console.log(ran);
 
-  bg.style.background = ran;
+//   bg.style.background = ran;
 
-  ins.value = ran;
-});
+//   ins.value = ran;
+// });
 
-let ip = document.getElementById("ip");
-let a = document.getElementById("a");
-let al = document.getElementById("al");
-let u = document.getElementById("u");
+// let ip = document.getElementById("ip");
+// let a = document.getElementById("a");
+// let al = document.getElementById("al");
+// let u = document.getElementById("u");
 
-a.addEventListener("click", () => {
-  let input = ip.value;
+// a.addEventListener("click", () => {
+//   let input = ip.value;
 
-  let li = document.createElement("li");
-  let bu = document.createElement("button");
-  bu.textContent = "delete";
-  li.innerHTML = input;
+//   let li = document.createElement("li");
+//   let bu = document.createElement("button");
+//   bu.textContent = "delete";
+//   li.innerHTML = input;
 
-  bu.addEventListener("click", () => {
-    li.remove();
-  });
+//   bu.addEventListener("click", () => {
+//     li.remove();
+//   });
 
-  u.appendChild(li);
-  li.appendChild(bu);
-});
+//   u.appendChild(li);
+//   li.appendChild(bu);
+// });
 
-let sls = document.getElementById("sls");
-let ckl = document.getElementById("ckl");
+// let sls = document.getElementById("sls");
+// let ckl = document.getElementById("ckl");
 
-let aa = [2, 15, 5, 63, 9];
+// let aa = [2, 15, 5, 63, 9];
 
-ckl.addEventListener("click", () => {
-  let skks = sls.value.split(" ").map(Number);
-  let inpa = skks.filter((f) => {
-    return f > 5;
-  });
+// ckl.addEventListener("click", () => {
+//   let skks = sls.value.split(" ").map(Number);
+//   let inpa = skks.filter((f) => {
+//     return f > 5;
+//   });
 
-  console.log(inpa);
-});
+//   console.log(inpa);
+// });
 
-let arra = ["apple", "orang", "manglo"];
-console.log(arra);
+// let arra = ["apple", "orang", "manglo"];
+// console.log(arra);
 
-function disp(some) {
-  console.log("out", some);
-}
+// function disp(some) {
+//   console.log("out", some);
+// }
 
-function cal(a, b) {
-  let total = a + b;
+// function cal(a, b) {
+//   let total = a + b;
 
-  disp(total);
-}
+//   disp(total);
+// }
 
-cal(5, 5);
+// cal(5, 5);
 
-function di(s) {
-  console.log(s);
-}
+// function di(s) {
+//   console.log(s);
+// }
 
-function cl(a, b, callback) {
-  let sum = a + b;
-  callback(sum);
-}
-cl(2, 8, di);
+// function cl(a, b, callback) {
+//   let sum = a + b;
+//   callback(sum);
+// }
+// cl(2, 8, di);
 
-let name = document.getElementById("name");
-let pass = document.getElementById("pass");
-let log = document.getElementById("log");
-let main = document.getElementById("main");
-let newa = document.getElementById("newa");
-let slss = document.getElementById("slss");
+// let name = document.getElementById("name");
+// let pass = document.getElementById("pass");
+// let log = document.getElementById("log");
+// let main = document.getElementById("main");
+// let newa = document.getElementById("newa");
+// let slss = document.getElementById("slss");
 
-slss.addEventListener("submit", (s) => {
-  s.preventDefault();
+// slss.addEventListener("submit", (s) => {
+//   s.preventDefault();
 
-  if ((name.value == "123") & (pass.value == "123")) {
-    main.style.display = "none";
-  } else {
-    alert("worng");
-  }
+//   if ((name.value == "123") & (pass.value == "123")) {
+//     main.style.display = "none";
+//   } else {
+//     alert("worng");
+//   }
 
-  newa.removeAttribute("hidden");
-});
+//   newa.removeAttribute("hidden");
+// });
 
-// let prosa = new Promise((resolve, reject) => {
-//     setInterval(() => {
-//         const ok = true
-//         if (ok) {
-//             resolve("right")
+// // let prosa = new Promise((resolve, reject) => {
+// //     setInterval(() => {
+// //         const ok = true
+// //         if (ok) {
+// //             resolve("right")
 
-//         }
-//         else {
-//             reject("wrong")
-//         }
+// //         }
+// //         else {
+// //             reject("wrong")
+// //         }
 
-//     }, 10000);
+// //     }, 10000);
 
-// })
+// // })
 
-// console.log(prosa);
+// // console.log(prosa);
 
-const getpromise = () => {
-  return new Promise((resolve, reject) => {
-    console.log("hello i am sohel ");
-    resolve("succes");
-  });
-};
+// const getpromise = () => {
+//   return new Promise((resolve, reject) => {
+//     console.log("hello i am sohel ");
+//     resolve("succes");
+//   });
+// };
 
-let sPromise = getpromise();
+// let sPromise = getpromise();
 
-sPromise.then((res) => {
-  // console.log("promise fullfild", res);
-});
+// sPromise.then((res) => {
+//   // console.log("promise fullfild", res);
+// });
 
-const pone = () => {
-  return new Promise((resolve, reject) => {
+// const pone = () => {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("hello sohel");
+//       resolve("ok");
+//     }, 2000);
+//   });
+// };
+
+// const ptwo = () => {
+//   // console.log("procesing");
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("sfsf");
+
+//       resolve("ok");
+//     }, 2000);
+//   });
+// };
+
+// console.log("procesing1");
+
+// let po = pone();
+// po.then((res) => {
+//   console.log(res);
+
+//   console.log("procesing2");
+//   let l = ptwo();
+//   l.then((res) => {
+//     console.log(res);
+//   });
+// });
+
+// async function ls() {
+//   console.log("hello");
+// }
+// console.log(ls());
+
+
+let ks = (() => {
+  new Promise((resolve, reject) => {
     setTimeout(() => {
-      console.log("hello sohel");
-      resolve("ok");
-    }, 2000);
-  });
-};
+      console.log("hello");
 
-const ptwo = () => {
-  // console.log("procesing");
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log("sfsf");
+      resolve("ok")
 
-      resolve("ok");
-    }, 2000);
-  });
-};
+    }, 2000)
+  })
 
-console.log("procesing1");
+})
+let lse = ks()
 
-let po = pone();
-po.then((res) => {
+lse.then((res) => {
   console.log(res);
-
-  console.log("procesing2");
-  let l = ptwo();
-  l.then((res) => {
-    console.log(res);
-  });
-});
+})
 
 
 
-async function ls() {
-  console.log("hello");
-}
-console.log(ls());
+// async function sila() {
+//   await ks(1)
+//   await ks(2)
+//   await ks(3)
+
+// }
