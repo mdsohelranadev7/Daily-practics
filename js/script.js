@@ -356,6 +356,11 @@ arr.map((s) => {
   console.log(s);
 });
 
+
+
+
+
+
 // let btns = document.getElementById("btns");
 
 // btns.addEventListener("click", () => {
@@ -544,22 +549,22 @@ arr.map((s) => {
 // console.log(ls());
 
 
-let ks = (() => {
-  new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log("hello");
+// let ks = (() => {
+//   new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("hello");
 
-      resolve("ok")
+//       resolve("ok")
 
-    }, 2000)
-  })
+//     }, 2000)
+//   })
 
-})
-let lse = ks()
+// })
+// let lse = ks()
 
-lse.then((res) => {
-  console.log(res);
-})
+// lse.then((res) => {
+//   console.log(res);
+// })
 
 
 
@@ -568,4 +573,167 @@ lse.then((res) => {
 //   await ks(2)
 //   await ks(3)
 
-// }
+// } 
+
+
+let fl = document.getElementById("fl")
+let ch = document.getElementById("ch")
+
+fl.addEventListener("click", (() => {
+
+  if (ch.classList.contains("translate-x-12")) {
+    ch.classList.remove("translate-x-12")
+  }
+  else {
+    ch.classList.add("translate-x-12")
+  }
+
+
+
+}))
+
+
+let ppp = [22, 13, 35, 31]
+
+// ************* Datatype conversetion ***************
+
+console.log("......");
+let nub = "33"
+console.log(typeof nub);
+
+let isnub = Number(nub)
+console.log(isnub);
+console.log(typeof isnub);
+
+
+
+// **********************  oparetion *************
+
+
+let ns = 4
+ns++
+console.log(ns++);
+
+console.log(+true);
+console.log(+false);
+
+// *************** comparison fo datatype***********
+let s = 2
+let k = 1
+console.log(s = k);
+
+
+console.log(null < 0);
+console.log(undefined < 0);
+
+const score = 10
+const id = Symbol("123")
+const ids = Symbol("123")
+
+console.log(id === ids);
+
+
+
+
+// *********** Array **********
+
+// push last element add 
+// pop last element remove
+// unshift frist element add
+// shift frist element remove 
+// join() array metthod  is string  and print 0,1,2,3, not array print [0,1,2,3]
+
+
+const myarr = [0, 1, 2, 3, 4, 5]
+myarr.push(5)
+// myarr.pop()
+myarr.unshift(45)
+myarr.shift()
+
+console.log(myarr);
+
+const ls = myarr.includes(39)
+console.log(ls);
+
+const newarr = myarr.join()
+
+console.log(newarr);
+
+
+let sks = myarr.slice(2)
+
+console.log(sks);
+
+
+let sls = [3, 4, 1, 6, 34]
+const nw = sls.slice(3)
+console.log(nw);
+
+let slss = [3, 4, 1, 6, 34]
+slss.splice(3)
+console.log(slss);
+
+
+let fruits = ["mango", "banana", "orange"]
+fruits.push("jackfruit")
+let ks = fruits.indexOf("jackfruit")
+
+let n = fruits.map((s) => {
+  return s + " fruit"
+
+})
+console.log(n);
+console.log(ks);
+
+let prd = [
+  { name: "shoe", price: 330, },
+  { name: "bag", price: 230, },
+  { name: "shirt", price: 360, },
+]
+
+let lsa = prd.filter((s, min) => {
+  console.log(s.prd);
+
+
+
+})
+
+
+
+const heros = ["badman", "spiderman", "superman"]
+const newheros = ["hero", "badluck", "sohel"]
+
+
+const newh = [...heros, ...newheros]
+console.log(newh);
+
+
+const nmb = [2, 3, [12, 32, [53, 1, 8][5, 24, 16]]]
+const nwa = nmb.flat(Infinity)
+console.log(nwa
+);
+
+
+
+let a = [
+  { name: "sohel", price: 130 },
+  { name: "shamim", price: 100 },
+  { name: "raju", price: 160 },
+  { name: "sha", price: 10 },
+]
+
+let high = a[0]
+let low = ""
+
+
+let aks = a.forEach((s) => {
+  if (s.price > high.price) {
+    high = s.price
+  }
+
+})
+
+
+console.log(high);
+
+
