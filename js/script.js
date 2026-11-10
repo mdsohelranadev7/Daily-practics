@@ -737,7 +737,7 @@ let aks = a.forEach((s) => {
 console.log(high);
 
 
-let addbtn = document.getElementById("addbtn")
+let addbtn = document.querySelectorAll(".addbtn")
 let newdiv = document.getElementById("newdiv")
 let newtext = document.getElementById("newtext")
 
@@ -753,13 +753,30 @@ function news() {
 
 }
 
-addbtn.addEventListener("click", () => {
 
-  iphone.forEach((s) => {
+function close() {
+  newdiv.classList.add("translate-x-full")
+  newdiv.classList.add("opacity-0")
+
+}
+addbtn.forEach((btn) => {
+
+  btn.addEventListener("click", (s) => {
+    const ka = btn.parentElement
     newtext.textContent = s.name
-
 
   })
   news()
+})
+
+document.addEventListener("click", (s) => {
+
+  let ka = newdiv.contains(s.target)
+
+  let ada = addbtn.contains(s.target)
+
+  if (!ka && !ada) {
+    close()
+  }
 
 })
