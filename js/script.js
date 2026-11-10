@@ -737,3 +737,29 @@ let aks = a.forEach((s) => {
 console.log(high);
 
 
+let addbtn = document.getElementById("addbtn")
+let newdiv = document.getElementById("newdiv")
+let newtext = document.getElementById("newtext")
+
+
+const iphone = [
+  { name: " iphone ", price: 99, },
+]
+
+function news() {
+  newdiv.classList.remove("translate-x-full")
+  newdiv.classList.remove("opacity-0")
+  // newdiv.classList.remove("hidden")
+
+}
+
+addbtn.addEventListener("click", () => {
+
+  iphone.forEach((s) => {
+    newtext.textContent = s.name
+
+
+  })
+  news()
+
+})
