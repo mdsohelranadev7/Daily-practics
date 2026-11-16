@@ -940,11 +940,95 @@ console.log(result);
 let flt = [1, 2, 3, 4, 5, 6, 7, 8]
 
 let rslt = flt.filter((s) => {
-return s % 2 === 0
-    
+  return s % 2 === 0
+
 
 })
 console.log(rslt);
+
+
+console.log("lsdafkdsakldfsakldkjdkjdfkjsdfkdfjjklakj");
+
+
+
+
+
+// const total = sumArray.reduce((sum, num) => sum + num)
+// console.log(total);
+
+
+
+const sumArray = [1, 2, 3, 4]
+let total = 0
+
+
+function sumArrays(s) {
+  for (const i of s) {
+    total += i
+  }
+  return total
+
+}
+console.log(total);
+
+
+let order = new Promise((resolve, reject) => {
+  let payment = true
+  if (payment) {
+    resolve("your order is fullfild");
+  }
+  else {
+    reject("your order not complete");
+  }
+
+
+})
+
+
+
+order.then((result) => {
+  console.log(result);
+
+})
+
+order.catch((error) => {
+  console.log(error);
+
+})
+
+
+let mypromise = new Promise((resolve, reject) => {
+
+  resolve(10)
+
+})
+
+mypromise.then((s) => {
+
+  console.log(s);
+  return s + 10
+
+
+}).then((s) => {
+  console.log(s);
+  return s + a10
+
+}).catch((error) => {
+  console.log("error", error);
+  return "succes"
+}).then((s) => {
+  console.log(s);
+  return s + 80
+
+}).then((s) => {
+  console.log(s);
+})
+
+
+
+
+
+
 
 
 
